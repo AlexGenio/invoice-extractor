@@ -26,7 +26,8 @@ echo ***************************************
 echo.
 
 :: Paths for general use
-set DEV_DIR=%CD%
+set SCRIPT_DIR=%CD%
+set DEV_DIR=%CD%\..
 set BUILD_DIR=%DEV_DIR%\build
 set INSTALLER_SRC_DIR=%DEV_DIR%\installer
 set SRC_DIR=%DEV_DIR%\src
@@ -85,7 +86,7 @@ echo ***************************************
 echo.
 
 echo Creating aliasses...
-call %DEV_DIR%\create_aliasses.cmd
+call %SCRIPT_DIR%\create_aliasses.cmd
 echo.
 
 set SETUP_RUN=1
